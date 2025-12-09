@@ -1,0 +1,17 @@
+- Java streams represents to pipeline from which data can flow and streams can perform the rich
+operation on the data such as transforming,intermediate and terminal etc.
+- Streams are Lazy in nature because of terminal operation will triggers the pipeline,operations
+won't be perform in advance for us according to terminal operation pipeline will be trigger.
+- intermediate operations
+    1. Filter -> act as a gate
+    2. Map -> act as a transformer (Stream will process element in swimline )
+    3. Flatmap -> flatten the nested structure (listOfLists)
+    4. pick -> Perform various operations on stream without modifying the data typically use to print the stream.(use case : to see all the element before or after any intermediate operation)
+    5. distinct -> filter out duplicates
+    6. Sorted -> sort in ascending order by default uses comparator for custom sort
+    7. Skip -> skips n number of element from the starting of stream
+    8. Limit -> works opposite of skip, controls n number of element from the starting of stream
+- Terminal operations
+    1. Reduce -> Reduce collection into one element, takes 2 args 1st arg is identity, position from where operation
+                starts 2nd is the operation that performed with the subsequent element.
+
