@@ -7,10 +7,10 @@ public class ConvertNumToSquare {
     //    Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).map(i -> i * i).forEach(System.out::println);
 
     //only even
-        Stream.iterate(1, i -> i + 1)
+        Stream.iterate(1, i -> (Integer) (i + 1))
                 .limit(10)
                 .filter(i -> i % 2 == 0)
-                .map(i -> i * i)
+                .map(i -> (Integer) (i * i))
                 .forEach(System.out::println);
          }
 }
