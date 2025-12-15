@@ -24,4 +24,4 @@
     8. Reduce           -> Reduce collection into one element, takes 2 args 1st arg is identity, position from where operation starts 2nd is the operation that performed with the subsequent element.
 
  Parallel Stream -> Performs operation on the stream in the parallel mostly used for computational heavy operation
-                    Complex operation better execution and optimizes time
+                    Complex operation better execution and optimizes time.
