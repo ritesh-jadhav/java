@@ -16,6 +16,8 @@ import java.util.stream.Stream;
 public class AvgOf3Element {
 
     public static void main(String[] args) {
+        // n = 5 -3 = 2
+        // 3 element = n - 2
         List<Integer> list = Arrays.asList(4,8,15,16,23,42);
         List<Double> avg = IntStream.range(0, list.size() - 2)
                 .mapToObj(i -> Double.valueOf((double) (list.get(i) + list.get(i + 1) + list.get(i + 2)) / 3)).toList();
